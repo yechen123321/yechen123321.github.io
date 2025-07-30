@@ -1,0 +1,336 @@
+/* 全局样式重置和基础设置 */
+:root {
+  --vp-c-brand-1: #4285f4;
+  --vp-c-brand-2: #5a9cff;
+  --vp-c-brand-3: #6ba6ff;
+  --vp-c-brand-soft: rgba(66, 133, 244, 0.14);
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(135deg, #4285f4 0%, #34a853 50%, #ea4335 100%);
+  --vp-home-hero-image-background-image: linear-gradient(135deg, #4285f4 10%, #34a853 50%, #ea4335 90%);
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+/* 首页英雄区域样式 */
+.VPHome {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0 !important;
+}
+
+/* 覆盖VitePress默认的VPHome margin-bottom */
+.VPHome[data-v-d8beba3b] {
+  margin-bottom: 0 !important;
+}
+
+@media (min-width: 768px) {
+  .VPHome[data-v-d8beba3b] {
+    margin-bottom: 0 !important;
+  }
+}
+
+.VPHome::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 600px;
+  height: 600px;
+  background: linear-gradient(135deg, #4285f4 0%, #34a853 50%, #ea4335 100%);
+  border-radius: 50%;
+  opacity: 0.1;
+  transform: translate(30%, -30%);
+  z-index: 0;
+}
+
+.VPHome::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(45deg, #4285f4 0%, #34a853 100%);
+  border-radius: 50%;
+  opacity: 0.08;
+  transform: translate(-50%, 50%);
+  z-index: 0;
+}
+
+.VPHero {
+  position: relative;
+  z-index: 1;
+}
+
+.VPHeroInfo {
+  position: relative;
+  z-index: 2;
+}
+
+/* 导航栏样式 */
+.VPNav {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(66, 133, 244, 0.1);
+}
+
+.VPNavBar {
+  background: transparent;
+}
+
+/* 按钮样式 */
+.VPButton {
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(66, 133, 244, 0.2);
+}
+
+.VPButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(66, 133, 244, 0.3);
+}
+
+.VPButton.brand {
+  background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
+  border: none;
+}
+
+.VPButton.alt {
+  border: 2px solid #4285f4;
+  color: #4285f4;
+  background: transparent;
+}
+
+.VPButton.alt:hover {
+  background: #4285f4;
+  color: white;
+}
+
+/* 特色区域样式 */
+.VPFeatures {
+  background: white;
+  padding: 80px 0;
+}
+
+.VPFeature {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(66, 133, 244, 0.1);
+}
+
+.VPFeature:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(66, 133, 244, 0.15);
+}
+
+.VPFeature .icon {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  font-size: 32px;
+  color: white;
+}
+
+/* 文章卡片样式 */
+.article-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-left: 4px solid #4285f4;
+}
+
+.article-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(66, 133, 244, 0.15);
+}
+
+.article-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #666;
+}
+
+.article-tag {
+  background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* 侧边栏样式 */
+.VPSidebar {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-right: 1px solid rgba(66, 133, 244, 0.1);
+}
+
+.VPSidebarItem.level-0 > .item > .link {
+  font-weight: 600;
+  color: #4285f4;
+}
+
+/* 页脚样式 */
+.VPFooter {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-top: 1px solid rgba(66, 133, 244, 0.1);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .VPHome::before,
+  .VPHome::after {
+    display: none;
+  }
+}
+
+/* 代码块样式 */
+.vp-code-group {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 自定义容器样式 */
+.custom-block {
+  border-radius: 12px;
+  border-left: 4px solid #4285f4;
+  background: rgba(66, 133, 244, 0.05);
+}
+
+.custom-block.tip {
+  border-left-color: #34a853;
+  background: rgba(52, 168, 83, 0.05);
+}
+
+.custom-block.warning {
+  border-left-color: #fbbc04;
+  background: rgba(251, 188, 4, 0.05);
+}
+
+.custom-block.danger {
+  border-left-color: #ea4335;
+  background: rgba(234, 67, 53, 0.05);
+}
+
+/* 搜索框样式 */
+.DocSearch-Button {
+  border-radius: 20px;
+  background: rgba(66, 133, 244, 0.1);
+  border: 1px solid rgba(66, 133, 244, 0.2);
+}
+
+.DocSearch-Button:hover {
+  background: rgba(66, 133, 244, 0.15);
+  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.2);
+}
+
+/* 自定义页脚样式 */
+.custom-footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  border-radius: 8px;
+}
+
+.footer-section h4 {
+  color: #2c3e50;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.logo-icon {
+  background: #3b82f6;
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.logo-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.footer-description {
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: #6b7280;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #3b82f6;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 1rem;
+}
+
+.footer-bottom p {
+  color: #9ca3af;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .custom-footer {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem 1rem;
+  }
+}
