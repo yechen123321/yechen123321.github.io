@@ -5,6 +5,7 @@ export default defineConfig({
   description: "全栈开发工程师，专注于web技术栈，热爱分享技术心得",
   lang: "zh-CN",
   base: "/",
+  ignoreDeadLinks: true,
   markdown: {
     html: true,
   },
