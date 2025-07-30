@@ -35,10 +35,17 @@ npm run preview
 
 ## 部署到 GitHub Pages
 
-1. 确保你的仓库名为 `BK`
+### 方式一：用户名.github.io 仓库（推荐）
+1. 将代码推送到名为 `用户名.github.io` 的仓库（如：yechen123321.github.io）
 2. 在 GitHub 仓库设置中启用 Pages
 3. 选择 "GitHub Actions" 作为部署源
 4. 推送代码到 `main` 分支会自动触发部署
+5. 网站将在 `https://用户名.github.io` 访问
+
+### 方式二：普通仓库
+1. 修改 `docs/.vitepress/config.js` 中的 `base` 为 `"/仓库名/"`
+2. 推送到任意仓库名
+3. 网站将在 `https://用户名.github.io/仓库名` 访问
 
 ## 项目结构
 
