@@ -22,6 +22,7 @@ export default defineConfig({
       { text: "首页", link: "/" },
       { text: "博客", link: "/blog/" },
       { text: "项目", link: "/projects/" },
+      { text: "生活点滴", link: "/life/" },
       { text: "关于", link: "/about/" },
       { text: "联系", link: "/contact/" },
     ],
@@ -55,6 +56,18 @@ export default defineConfig({
             { text: "个人博客系统", link: "/projects/blog-system" },
             { text: "在线代码编辑器", link: "/projects/code-editor" },
             { text: "任务管理应用", link: "/projects/task-manager" },
+          ],
+        },
+      ],
+      "/life/": [
+        {
+          text: "生活点滴",
+          items: [
+            { text: "山间徒步之旅", link: "/life/travel-mountain" },
+            { text: "《深度工作》读后感", link: "/life/book-thinking" },
+            { text: "爵士乐的魅力", link: "/life/music-jazz" },
+            { text: "新年料理尝试", link: "/life/cooking-adventure" },
+            { text: "合肥博物馆参观记", link: "/life/hefei-museum" },
           ],
         },
       ],
