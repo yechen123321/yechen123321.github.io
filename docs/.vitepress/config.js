@@ -68,6 +68,7 @@ export default defineConfig({
             { text: "爵士乐的魅力", link: "/life/music-jazz" },
             { text: "新年料理尝试", link: "/life/cooking-adventure" },
             { text: "合肥博物馆参观记", link: "/life/hefei-museum" },
+            { text: "陶喆演唱会现场体验", link: "/life/david-tao-concert" },
           ],
         },
       ],

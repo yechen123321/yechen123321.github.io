@@ -84,6 +84,20 @@
   </div>
 </div>
 
+<div class="life-card">
+  <div class="life-image">
+    <div class="placeholder-image">🎤</div>
+  </div>
+  <div class="life-content">
+    <div class="life-meta">
+      <span class="life-tag">音乐</span>
+      <span>📅 2024-01-25</span>
+    </div>
+    <h3><a href="./david-tao-concert">陶喆演唱会现场体验</a></h3>
+    <p>现场感受华语R&B教父的音乐魅力，重温那些陪伴青春岁月的经典歌曲...</p>
+  </div>
+</div>
+
 </div>
 
 ## 分类浏览
