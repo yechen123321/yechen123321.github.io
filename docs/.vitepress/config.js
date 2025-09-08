@@ -32,6 +32,10 @@ export default defineConfig({
           text: "最新文章",
           items: [
             {
+              text: "Linux环境下Nginx源码编译安装配置指南",
+              link: "/blog/linux-nginx-setup",
+            },
+            {
               text: "前端框架对比和选择指南",
               link: "/blog/frontend-frameworks",
             },

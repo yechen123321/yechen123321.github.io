@@ -10,17 +10,17 @@
 
 <div class="article-card">
   <div class="article-meta">
-    <span class="article-tag">前端框架</span>
-    <span>📅 2024-01-15</span>
-    <span>👀 3.1万</span>
+    <span class="article-tag">Linux</span>
+    <span>📅 2024-01-20</span>
+    <span>👀 新发布</span>
   </div>
-  <h3><a href="./frontend-frameworks">前端框架对比和选择指南</a></h3>
-  <p>深度分析当前主流前端框架的特点、适用场景和选择标准，帮助开发者做出最佳技术选型决策。涵盖Vue.js、React、Angular等主流框架的详细对比。</p>
+  <h3><a href="./linux-nginx-setup">Linux环境下Nginx源码编译安装配置指南</a></h3>
+  <p>详细介绍如何在Linux环境下通过源码编译的方式安装和配置Nginx，包括依赖安装、编译配置、服务启动等完整流程。</p>
   <div class="article-tags">
-    <span>Vue.js</span>
-    <span>React</span>
-    <span>Angular</span>
-    <span>技术选型</span>
+    <span>Linux</span>
+    <span>Nginx</span>
+    <span>服务器配置</span>
+    <span>运维</span>
   </div>
 </div>
 
@@ -78,6 +78,22 @@
 
 <div class="article-card">
   <div class="article-meta">
+    <span class="article-tag">Linux</span>
+    <span>📅 2024-01-20</span>
+    <span>👀 新发布</span>
+  </div>
+  <h3><a href="./linux-nginx-setup">Linux环境下Nginx源码编译安装配置指南</a></h3>
+  <p>详细介绍如何在Linux环境下通过源码编译的方式安装和配置Nginx，包括依赖安装、编译配置、服务启动等完整流程。</p>
+  <div class="article-tags">
+    <span>Linux</span>
+    <span>Nginx</span>
+    <span>服务器配置</span>
+    <span>运维</span>
+  </div>
+</div>
+
+<div class="article-card">
+  <div class="article-meta">
     <span class="article-tag">Node.js</span>
     <span>📅 2024-01-05</span>
     <span>👀 2.2万</span>
@@ -114,10 +130,11 @@
   - Vue.js (5篇)
   - React (3篇)
   - TypeScript (4篇)
-- **后端技术** (8篇)
+- **后端技术** (9篇)
   - Node.js (4篇)
   - Python (2篇)
   - 数据库 (2篇)
+  - Linux运维 (1篇)
 - **工程化** (6篇)
   - 构建工具 (3篇)
   - 部署运维 (2篇)
